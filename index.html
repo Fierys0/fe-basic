@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Hitoyoshi — Kyushu's Little Kyoto. Explore historic castle ruins, sacred shrines, thrilling river adventures, and natural hot springs in Kumamoto Prefecture, Japan.">
+  <title>Discover Hitoyoshi — Kyushu's Hidden Gem | Kumamoto, Japan</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/flag-hitoyoshi.webp">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- UI/UX Pro Max: Accessibility Skip to Content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================
+       HEADER / NAVIGATION
+       ============================================ -->
+  <header class="site-header" id="header">
+    <div class="container">
+      <!-- Logo -->
+      <a href="#hero" class="logo">
+        <img src="assets/flag-hitoyoshi.webp" alt="Hitoyoshi city emblem" class="logo__icon">
+        <div>
+          <span class="logo__text">Discover Hitoyoshi</span>
+          <span class="logo__sub">Kumamoto, Japan</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-desktop__list">
+          <li><a href="#about" class="nav-desktop__link">About</a></li>
+          <li><a href="#attractions" class="nav-desktop__link">Attractions</a></li>
+          <li><a href="#pricing" class="nav-desktop__link">Pricing</a></li>
+          <li><a href="#gallery" class="nav-desktop__link">Gallery</a></li>
+          <li><a href="#map" class="nav-desktop__link">Access</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--sm">Book Now</a>
+      </nav>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="navMobile" aria-label="Mobile Navigation">
+      <ul class="nav-mobile__list">
+        <li><a href="#about" class="nav-mobile__link">About</a></li>
+        <li><a href="#attractions" class="nav-mobile__link">Attractions</a></li>
+        <li><a href="#pricing" class="nav-mobile__link">Pricing</a></li>
+        <li><a href="#gallery" class="nav-mobile__link">Gallery</a></li>
+        <li><a href="#map" class="nav-mobile__link">Access</a></li>
+        <li><a href="#contact" class="nav-mobile__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+  <!-- ============================================
+       HERO SECTION (Video Background Preserved)
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <video autoplay muted loop playsinline poster="assets/hitoyoshi sky.jpg">
+        <source src="assets/welcome to hitoyoshi.mp4" type="video/mp4">
+        <img src="assets/hitoyoshi sky.jpg" alt="Hitoyoshi panoramic view">
+      </video>
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          Kyushu's Little Kyoto &mdash; 700 Years of Heritage
+        </div>
+        <h1 class="hero__title">
+          Hitoyoshi, Kumamoto
+          <span>人吉市 — Where History Meets Nature</span>
+        </h1>
+        <p class="hero__desc">
+          Nestled in a lush mountain basin of southern Kumamoto Prefecture, Hitoyoshi is a serene castle town where centuries-old shrines, rushing rivers, and steaming hot springs await your discovery.
+        </p>
+        <div class="hero__actions">
+          <a href="#attractions" class="btn btn--primary btn--lg">Explore Attractions</a>
+          <a href="#gallery" class="btn btn--outline-white btn--lg">View Photo Gallery</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       QUICK STATS BAR
+       ============================================ -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-bar__grid">
+        <div class="stats-bar__item fade-in">
+          <div class="stats-bar__number">700+</div>
+          <div class="stats-bar__label">Years of Sagara Clan Rule</div>
+        </div>
+        <div class="stats-bar__item fade-in">
+          <div class="stats-bar__number">50+</div>
+          <div class="stats-bar__label">Natural Hot Spring Sources</div>
+        </div>
+        <div class="stats-bar__item fade-in">
+          <div class="stats-bar__number">27</div>
+          <div class="stats-bar__label">Local Shochu Distilleries</div>
+        </div>
+        <div class="stats-bar__item fade-in">
+          <div class="stats-bar__number">5</div>
+          <div class="stats-bar__label">National Treasure Structures</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================
+       ABOUT / OVERVIEW SECTION (Badges removed per user request)
+       ============================================ -->
+  <section class="section section--light" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <!-- [PDF REQUIREMENT 4.a & 4.f] Semantic <figure> & <figcaption> Media Gambar Dokumentasi -->
+        <figure class="about__image-wrapper fade-in-left" style="margin:0;">
+          <img src="assets/hitoyoshi sky.jpg" alt="Panoramic view of Hitoyoshi city with mountains and river" class="about__image" loading="lazy" decoding="async">
+          <figcaption class="about__image-caption"><svg class="inline-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Hitoyoshi Basin, Kumamoto Prefecture</figcaption>
+        </figure>
+
+        <div class="about__content fade-in-right">
+          <span class="section__label">About Hitoyoshi</span>
+          <h2 class="section__title">A Castle Town Frozen in Time</h2>
+          <p class="about__text">
+            Often referred to as <strong>"Kyushu's Little Kyoto,"</strong> Hitoyoshi is a historic castle town in the southern mountainous basin of Kumamoto Prefecture. Ruled by the Sagara clan for nearly 700 unbroken years &mdash; from the Kamakura period through the Meiji Restoration &mdash; the town preserves a nostalgic streetscape of samurai heritage, sacred thatched shrines, and natural beauty.
+          </p>
+          <p class="about__text">
+            The mighty Kuma River, celebrated as one of Japan's three fastest-flowing rivers, carves straight through the city center, offering traditional boat cruises and thrilling river adventures. Along its scenic banks, more than 50 natural hot spring sources provide rejuvenating alkaline onsen baths, making Hitoyoshi a timeless destination for cultural travelers and outdoor lovers alike.
+          </p>
+
+          <a href="#attractions" class="btn btn--outline">Explore Destinations &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ============================================
+       TOP ATTRACTIONS SHOWCASE (Fullscreen Page Split Slider - Gambar 2 Reference)
+       ============================================ -->
+  <!-- =========================================================================
+       [PDF REQUIREMENT 4.a & 5.b] TOP ATTRACTIONS: Fullscreen Page Split Slider (Gambar 2 Reference)
+       [PDF REQUIREMENT 4.b] CSS Layouting: CSS Grid Split Screen (100vw x 100vh)
+       [PDF REQUIREMENT 4.c] Heading <h2>, <h3>, & Paragraf <p>: Destinasi Utama & Kanji
+       [PDF REQUIREMENT 4.f] Media Gambar <img>: Foto Resolusi Tinggi Tempat Wisata
+       ========================================================================= -->
+  <section class="fs-showcase" id="attractions">
+
+    <!-- Slide 1: Hitoyoshi Castle Ruins -->
+    <article class="fs-slide active" data-slide="0">
+      <div class="fs-slide__content">
+        <div class="fs-slide__inner">
+          <span class="fs-slide__eyebrow">Historic Landmark</span>
+          <h2 class="fs-slide__title">Hitoyoshi Castle Ruins <span class="fs-slide__kanji">人吉城跡</span></h2>
+          <p class="fs-slide__desc">
+            Also known as Sengetsu-jō (Crescent Moon Castle), these monumental ruins overlook the turquoise Kuma River. Established in 1198 and ruled by the Sagara clan for 35 generations over 700 years, the stronghold features rare European-influenced curved stone ramparts (musha-gaeshi) engineered to repel invaders, offering panoramic vistas across the entire river valley.
+          </p>
+          <div class="fs-slide__meta">
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Fumoto-machi, Hitoyoshi</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>1 – 2 hours</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l6 9 6-9M12 12v9M8 15h8M8 18h8"></path></svg>
+              <span>Free Admission</span>
+            </div>
+          </div>
+          <div class="fs-slide__controls">
+            <div class="fs-nav-arrows">
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--prev" aria-label="Previous attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--next" aria-label="Next attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+            <div class="fs-nav-pagination">
+              <div class="fs-dots" role="tablist" aria-label="Attraction slides">
+                <button type="button" class="fs-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+                <button type="button" class="fs-dot" data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                <button type="button" class="fs-dot" data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                <button type="button" class="fs-dot" data-index="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+                <button type="button" class="fs-dot" data-index="4" role="tab" aria-selected="false" aria-label="Slide 5"></button>
+                <button type="button" class="fs-dot" data-index="5" role="tab" aria-selected="false" aria-label="Slide 6"></button>
+              </div>
+              <span class="fs-counter"><span class="fs-counter__active">01</span> / 06</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fs-slide__visual">
+        <img src="assets/castle hitoyoshi.jpg" alt="Hitoyoshi Castle stone ramparts overlooking the valley" class="fs-slide__img" loading="eager" decoding="async">
+      </div>
+    </article>
+
+    <!-- Slide 2: Aoi Aso Shrine -->
+    <article class="fs-slide" data-slide="1">
+      <div class="fs-slide__content">
+        <div class="fs-slide__inner">
+          <span class="fs-slide__eyebrow">National Treasure of Japan</span>
+          <h2 class="fs-slide__title">Aoi Aso Shrine <span class="fs-slide__kanji">青井阿蘇神社</span></h2>
+          <p class="fs-slide__desc">
+            Designated an official National Treasure of Japan in 2008, Aoi Aso Shrine was founded in 806 CE. Its five interconnected structures feature steeply pitched thatched roofs (kayabuki) and vibrant Momoyama-style decorative wood carvings, embodying 1,200 years of deep spiritual devotion and architectural excellence.
+          </p>
+          <div class="fs-slide__meta">
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Kamiaoi-machi, Hitoyoshi</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>45 – 60 mins</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l6 9 6-9M12 12v9M8 15h8M8 18h8"></path></svg>
+              <span>Free Admission</span>
+            </div>
+          </div>
+          <div class="fs-slide__controls">
+            <div class="fs-nav-arrows">
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--prev" aria-label="Previous attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--next" aria-label="Next attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+            <div class="fs-nav-pagination">
+              <div class="fs-dots" role="tablist" aria-label="Attraction slides">
+                <button type="button" class="fs-dot" data-index="0" role="tab" aria-selected="false" aria-label="Slide 1"></button>
+                <button type="button" class="fs-dot active" data-index="1" role="tab" aria-selected="true" aria-label="Slide 2"></button>
+                <button type="button" class="fs-dot" data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                <button type="button" class="fs-dot" data-index="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+                <button type="button" class="fs-dot" data-index="4" role="tab" aria-selected="false" aria-label="Slide 5"></button>
+                <button type="button" class="fs-dot" data-index="5" role="tab" aria-selected="false" aria-label="Slide 6"></button>
+              </div>
+              <span class="fs-counter"><span class="fs-counter__active">02</span> / 06</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fs-slide__visual">
+        <img src="assets/hitoyoshi shrine.jpg" alt="Aoi Aso Shrine thatched roof National Treasure sanctuary" class="fs-slide__img" loading="lazy" decoding="async">
+      </div>
+    </article>
+
+    <!-- Slide 3: Kuma River Wooden Boat Cruise -->
+    <article class="fs-slide" data-slide="2">
+      <div class="fs-slide__content">
+        <div class="fs-slide__inner">
+          <span class="fs-slide__eyebrow">Scenic Waterway &amp; Rapids</span>
+          <h2 class="fs-slide__title">Kuma River &amp; Boat Cruise <span class="fs-slide__kanji">球磨川下り</span></h2>
+          <p class="fs-slide__desc">
+            Celebrated as one of Japan's three fastest-flowing rivers, the emerald Kuma River carves straight through the Hitoyoshi Basin. Experience Kumagawa Kudari, an iconic 700-year-old river expedition guided by skilled boatmen with long bamboo poles traversing dynamic rapids and limestone bluffs.
+          </p>
+          <div class="fs-slide__meta">
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Hawatashi-machi, Hitoyoshi</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>1.5 – 2 hours</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l6 9 6-9M12 12v9M8 15h8M8 18h8"></path></svg>
+              <span>Cruise Tickets Available</span>
+            </div>
+          </div>
+          <div class="fs-slide__controls">
+            <div class="fs-nav-arrows">
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--prev" aria-label="Previous attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--next" aria-label="Next attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+            <div class="fs-nav-pagination">
+              <div class="fs-dots" role="tablist" aria-label="Attraction slides">
+                <button type="button" class="fs-dot" data-index="0" role="tab" aria-selected="false" aria-label="Slide 1"></button>
+                <button type="button" class="fs-dot" data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                <button type="button" class="fs-dot active" data-index="2" role="tab" aria-selected="true" aria-label="Slide 3"></button>
+                <button type="button" class="fs-dot" data-index="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+                <button type="button" class="fs-dot" data-index="4" role="tab" aria-selected="false" aria-label="Slide 5"></button>
+                <button type="button" class="fs-dot" data-index="5" role="tab" aria-selected="false" aria-label="Slide 6"></button>
+              </div>
+              <span class="fs-counter"><span class="fs-counter__active">03</span> / 06</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fs-slide__visual">
+        <img src="assets/boat.jpg" alt="Traditional wooden longboat navigating the clear waters of Kuma River" class="fs-slide__img" loading="lazy" decoding="async">
+      </div>
+    </article>
+
+    <!-- Slide 4: Hitoyoshi Onsen -->
+    <article class="fs-slide" data-slide="3">
+      <div class="fs-slide__content">
+        <div class="fs-slide__inner">
+          <span class="fs-slide__eyebrow">Therapeutic Mineral Baths</span>
+          <h2 class="fs-slide__title">Hitoyoshi Onsen <span class="fs-slide__kanji">人吉温泉</span></h2>
+          <p class="fs-slide__desc">
+            Renowned since the late 15th century, Hitoyoshi is blessed with over 50 natural hot spring sources along the river valley. The silky, weakly alkaline waters gently rejuvenate skin and soothe tired muscles. Authentic public bathhouses (sento) made of aromatic cedar offer timeless moments of quiet reflection.
+          </p>
+          <div class="fs-slide__meta">
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Basin Onsen District</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>1 – 2 hours</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l6 9 6-9M12 12v9M8 15h8M8 18h8"></path></svg>
+              <span>&yen;300 – &yen;800</span>
+            </div>
+          </div>
+          <div class="fs-slide__controls">
+            <div class="fs-nav-arrows">
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--prev" aria-label="Previous attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--next" aria-label="Next attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+            <div class="fs-nav-pagination">
+              <div class="fs-dots" role="tablist" aria-label="Attraction slides">
+                <button type="button" class="fs-dot" data-index="0" role="tab" aria-selected="false" aria-label="Slide 1"></button>
+                <button type="button" class="fs-dot" data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                <button type="button" class="fs-dot" data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                <button type="button" class="fs-dot active" data-index="3" role="tab" aria-selected="true" aria-label="Slide 4"></button>
+                <button type="button" class="fs-dot" data-index="4" role="tab" aria-selected="false" aria-label="Slide 5"></button>
+                <button type="button" class="fs-dot" data-index="5" role="tab" aria-selected="false" aria-label="Slide 6"></button>
+              </div>
+              <span class="fs-counter"><span class="fs-counter__active">04</span> / 06</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fs-slide__visual">
+        <img src="assets/kuma river 2.jpg" alt="Traditional cedarwood interior bathhouse of Hitoyoshi Onsen" class="fs-slide__img" loading="lazy" decoding="async">
+      </div>
+    </article>
+
+    <!-- Slide 5: SL Hitoyoshi Steam Train -->
+    <article class="fs-slide" data-slide="4">
+      <div class="fs-slide__content">
+        <div class="fs-slide__inner">
+          <span class="fs-slide__eyebrow">Heritage Railway</span>
+          <h2 class="fs-slide__title">SL Hitoyoshi Heritage Train <span class="fs-slide__kanji">蒸気機関車 SL人吉</span></h2>
+          <p class="fs-slide__desc">
+            Powered by the legendary JR Kyushu locomotive No. 58654, Japan's oldest active commercial steam train. Built in 1922 during the Taisho period, this beloved locomotive traveled the scenic Hisatsu Line through mist-draped mountain tunnels and dramatic river gorges, welcoming travelers from across the globe.
+          </p>
+          <div class="fs-slide__meta">
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>JR Hitoyoshi Station</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Scenic Excursion</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l6 9 6-9M12 12v9M8 15h8M8 18h8"></path></svg>
+              <span>Heritage Reservation</span>
+            </div>
+          </div>
+          <div class="fs-slide__controls">
+            <div class="fs-nav-arrows">
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--prev" aria-label="Previous attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--next" aria-label="Next attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+            <div class="fs-nav-pagination">
+              <div class="fs-dots" role="tablist" aria-label="Attraction slides">
+                <button type="button" class="fs-dot" data-index="0" role="tab" aria-selected="false" aria-label="Slide 1"></button>
+                <button type="button" class="fs-dot" data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                <button type="button" class="fs-dot" data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                <button type="button" class="fs-dot" data-index="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+                <button type="button" class="fs-dot active" data-index="4" role="tab" aria-selected="true" aria-label="Slide 5"></button>
+                <button type="button" class="fs-dot" data-index="5" role="tab" aria-selected="false" aria-label="Slide 6"></button>
+              </div>
+              <span class="fs-counter"><span class="fs-counter__active">05</span> / 06</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fs-slide__visual">
+        <img src="assets/JRK_58654_SL-Hitoyoshi.jpg" alt="JR Kyushu SL Hitoyoshi steam train locomotive No. 58654" class="fs-slide__img" loading="lazy" decoding="async">
+      </div>
+    </article>
+
+    <!-- Slide 6: Kaname & Ryuomon Waterfalls -->
+    <article class="fs-slide" data-slide="5">
+      <div class="fs-slide__content">
+        <div class="fs-slide__inner">
+          <span class="fs-slide__eyebrow">Natural Wonder</span>
+          <h2 class="fs-slide__title">Kaname &amp; Ryuomon Waterfalls <span class="fs-slide__kanji">鹿目の滝</span></h2>
+          <p class="fs-slide__desc">
+            Selected among Japan's Top 100 Waterfalls, Kaname Falls thunders 36 meters down columnar basalt volcanic cliffs into a secluded, crystal-clear mountain pool. Divided into the thundering Odaki (male falls) and gentle Medaki (female falls), the lush cedar gorge offers crisp mountain air, mossy stones, and tranquil hiking trails.
+          </p>
+          <div class="fs-slide__meta">
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Kaname-machi, Hitoyoshi</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>1 – 1.5 hours</span>
+            </div>
+            <div class="fs-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l6 9 6-9M12 12v9M8 15h8M8 18h8"></path></svg>
+              <span>Free Admission</span>
+            </div>
+          </div>
+          <div class="fs-slide__controls">
+            <div class="fs-nav-arrows">
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--prev" aria-label="Previous attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" class="fs-nav-arrow fs-nav-arrow--next" aria-label="Next attraction">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+            <div class="fs-nav-pagination">
+              <div class="fs-dots" role="tablist" aria-label="Attraction slides">
+                <button type="button" class="fs-dot" data-index="0" role="tab" aria-selected="false" aria-label="Slide 1"></button>
+                <button type="button" class="fs-dot" data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                <button type="button" class="fs-dot" data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                <button type="button" class="fs-dot" data-index="3" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+                <button type="button" class="fs-dot" data-index="4" role="tab" aria-selected="false" aria-label="Slide 5"></button>
+                <button type="button" class="fs-dot active" data-index="5" role="tab" aria-selected="true" aria-label="Slide 6"></button>
+              </div>
+              <span class="fs-counter"><span class="fs-counter__active">06</span> / 06</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fs-slide__visual">
+        <img src="assets/waterfall.jpg" alt="Pristine mountain waterfall in lush forest near Hitoyoshi" class="fs-slide__img" loading="lazy" decoding="async">
+      </div>
+    </article>
+
+  </section>
+
+
+<!-- ============================================
+       PRICING / TABLE SECTION
+       ============================================ -->
+  <!-- =========================================================================
+       [PDF REQUIREMENT 4.d & 5.e & 5.f] TICKETS, SCHEDULE & ACTIVITIES GUIDE
+       [PDF REQUIREMENT 4.d & 5.f] Ordered List <ol>: 6 Aktivitas Menarik yang Dapat Dilakukan
+       [PDF REQUIREMENT 4.e & 5.e] Table <table>: Tabel Harga Tiket & Fasilitas Jadwal Buka
+       ========================================================================= -->
+  <section class="section section--light" id="pricing">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section__label">Tickets &amp; Pricing</span>
+        <h2 class="section__title">Experience Packages &amp; Admission</h2>
+        <p class="section__subtitle">Plan your visit with our comprehensive pricing guide for Hitoyoshi's top attractions and activities.</p>
+      </div>
+
+      <!-- ===================================================================
+           [PDF REQUIREMENT 4.d & 5.f] LIST AKTIVITAS MENARIK (ORDERED LIST <ol>)
+           Top 6 aktivitas wisata menarik bernomor yang dapat dilakukan di Hitoyoshi
+           =================================================================== -->
+      <div class="activities-guide fade-in">
+        <div class="activities-guide__header">
+          <span class="section__label">Must-Do Experiences</span>
+          <h3 class="activities-guide__title">Top 6 Recommended Activities in Hitoyoshi</h3>
+          <p class="activities-guide__subtitle">An essential curated itinerary for travelers seeking an authentic blend of nature, heritage, and wellness.</p>
+        </div>
+        
+        <ol class="activities-ordered-list">
+          <li class="activity-item">
+            <div class="activity-item__number">01</div>
+            <div class="activity-item__content">
+              <h4 class="activity-item__heading">Kumagawa Kudari Wooden Boat Expedition</h4>
+              <p class="activity-item__text">Experience a 700-year-old river expedition guided by master boatmen with long bamboo poles through the emerald Kuma River rapids.</p>
+            </div>
+          </li>
+          <li class="activity-item">
+            <div class="activity-item__number">02</div>
+            <div class="activity-item__content">
+              <h4 class="activity-item__heading">Thermal Mineral Soaking at Hitoyoshi Onsen</h4>
+              <p class="activity-item__text">Rejuvenate in over 50 natural hot spring sources and historic cedarwood public bathhouses dating back to the samurai era.</p>
+            </div>
+          </li>
+          <li class="activity-item">
+            <div class="activity-item__number">03</div>
+            <div class="activity-item__content">
+              <h4 class="activity-item__heading">Exploring Aoi Aso Shrine &amp; Crescent Castle</h4>
+              <p class="activity-item__text">Walk through 1,200 years of Shinto devotion at the thatched National Treasure shrine and the curved stone ramparts of Sengetsu-jō.</p>
+            </div>
+          </li>
+          <li class="activity-item">
+            <div class="activity-item__number">04</div>
+            <div class="activity-item__content">
+              <h4 class="activity-item__heading">Riding the Taisho-Era SL Hitoyoshi Steam Train</h4>
+              <p class="activity-item__text">Travel in vintage carriages powered by Japan's oldest operational steam train (No. 58654) through picturesque mountain ravines.</p>
+            </div>
+          </li>
+          <li class="activity-item">
+            <div class="activity-item__number">05</div>
+            <div class="activity-item__content">
+              <h4 class="activity-item__heading">Tasting 500-Year-Old Kuma Shōchū &amp; River Ayu</h4>
+              <p class="activity-item__text">Savor authentic WTO-designated rice shōchū paired with freshly charcoal-grilled sweetfish harvested directly from pure river waters.</p>
+            </div>
+          </li>
+          <li class="activity-item">
+            <div class="activity-item__number">06</div>
+            <div class="activity-item__content">
+              <h4 class="activity-item__heading">Nature Trekking at Kaname &amp; Ryuomon Waterfalls</h4>
+              <p class="activity-item__text">Hike the tranquil mossy trails leading to the 36-meter twin volcanic cascades of Kaname Falls, among Japan's Top 100 Waterfalls.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Pricing Table -->
+      <div class="pricing__wrapper fade-in">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Experience</th>
+              <th>Adult</th>
+              <th>Child</th>
+              <th>Duration</th>
+              <th>Season</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Seiryu River Cruise</strong></td>
+              <td class="price">¥3,000</td>
+              <td class="price">¥1,600</td>
+              <td>~50 min</td>
+              <td>Year-round</td>
+              <td><span class="badge badge--popular">Popular</span></td>
+            </tr>
+            <tr>
+              <td><strong>Baika Ferry Cruise</strong></td>
+              <td class="price">¥2,500</td>
+              <td class="price">¥1,000</td>
+              <td>~30 min</td>
+              <td>Year-round</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Whitewater Rafting</strong></td>
+              <td class="price">¥11,000</td>
+              <td class="price">¥8,000</td>
+              <td>~3 hours</td>
+              <td>Apr – Oct</td>
+              <td><span class="badge badge--new">Adventure</span></td>
+            </tr>
+            <tr>
+              <td><strong>SL Hitoyoshi Train</strong></td>
+              <td class="price">¥2,640</td>
+              <td class="price">¥1,320</td>
+              <td>~2.5 hours</td>
+              <td>Weekends</td>
+              <td><span class="badge badge--popular">Must-Try</span></td>
+            </tr>
+            <tr>
+              <td><strong>Hitoyoshi Castle Ruins</strong></td>
+              <td class="price">Free</td>
+              <td class="price">Free</td>
+              <td>1–2 hours</td>
+              <td>Year-round</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Aoi Aso Shrine</strong></td>
+              <td class="price">Free</td>
+              <td class="price">Free</td>
+              <td>~45 min</td>
+              <td>Year-round</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>Public Onsen (Sentō)</strong></td>
+              <td class="price">¥300</td>
+              <td class="price">¥150</td>
+              <td>Flexible</td>
+              <td>Year-round</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>BBQ Boat Cruise (Private)</strong></td>
+              <td class="price">¥19,000~</td>
+              <td class="price">—</td>
+              <td>~1 hour</td>
+              <td>Apr – Nov</td>
+              <td><span class="badge badge--new">New</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Schedule / Operating Hours Table -->
+      <div class="fade-in">
+        <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-top: var(--space-3xl); margin-bottom: var(--space-sm); color: var(--color-primary);">Facility Operating Hours</h3>
+        <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: var(--space-lg);">Opening hours may vary by season. Please confirm before visiting.</p>
+
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Facility</th>
+              <th>Weekdays</th>
+              <th>Weekends</th>
+              <th>Closed</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Hitoyoshi Castle Ruins</strong></td>
+              <td>Open 24h</td>
+              <td>Open 24h</td>
+              <td>None</td>
+              <td><span class="status-dot status-dot--open"></span>Open</td>
+            </tr>
+            <tr>
+              <td><strong>Aoi Aso Shrine</strong></td>
+              <td>06:00 – 17:00</td>
+              <td>06:00 – 17:00</td>
+              <td>None</td>
+              <td><span class="status-dot status-dot--open"></span>Open</td>
+            </tr>
+            <tr>
+              <td><strong>Hassenba Complex</strong></td>
+              <td><time datetime="09:00">09:00</time> – <time datetime="17:00">17:00</time></td>
+              <td>09:00 – 18:00</td>
+              <td>Tuesdays</td>
+              <td><span class="status-dot status-dot--open"></span>Open</td>
+            </tr>
+            <tr>
+              <td><strong>MOZOCA Station 868</strong></td>
+              <td><time datetime="09:00">09:00</time> – <time datetime="17:00">17:00</time></td>
+              <td><time datetime="09:00">09:00</time> – <time datetime="17:00">17:00</time></td>
+              <td>Wednesdays</td>
+              <td><span class="status-dot status-dot--open"></span>Open</td>
+            </tr>
+            <tr>
+              <td><strong>River Boat Cruises</strong></td>
+              <td><time datetime="09:30">09:30</time> – <time datetime="15:30">15:30</time></td>
+              <td><time datetime="09:00">09:00</time> – <time datetime="16:00">16:00</time></td>
+              <td>Bad weather</td>
+              <td><span class="status-dot status-dot--open"></span>Open</td>
+            </tr>
+            <tr>
+              <td><strong>Craft Park (Ishino)</strong></td>
+              <td><time datetime="09:00">09:00</time> – <time datetime="17:00">17:00</time></td>
+              <td><time datetime="09:00">09:00</time> – <time datetime="17:00">17:00</time></td>
+              <td>Mon &amp; Dec-Jan</td>
+              <td><span class="status-dot status-dot--open"></span>Open</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       GALLERY SECTION (Drive-style Fullscreen Preview)
+       ============================================ -->
+  <!-- =========================================================================
+       [PDF REQUIREMENT 4.f & 5.b] GALLERY SECTION: Foto-Foto Resolusi Tinggi Tempat Wisata
+       [PDF REQUIREMENT 4.b] CSS Layouting: CSS Grid Photo Gallery
+       Drive-style Fullscreen Preview Modal dengan Keyboard Navigation
+       ========================================================================= -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section__label">Gallery</span>
+        <h2 class="section__title">Hitoyoshi in Pictures</h2>
+        <p class="section__subtitle">A curated collection of photographs capturing this enchanting castle town. Click any photo to view in high definition.</p>
+      </div>
+
+      <div class="gallery__grid fade-in">
+        <div class="gallery__item" data-index="0" role="button" tabindex="0" aria-label="Preview Hitoyoshi Basin at Dawn">
+          <img src="assets/hitoyoshi sky.jpg" alt="Panoramic view of Hitoyoshi city at dawn" loading="lazy" decoding="async">
+          <div class="gallery__item-overlay">
+            <span>Hitoyoshi Basin at Dawn</span>
+          </div>
+        </div>
+        <div class="gallery__item" data-index="1" role="button" tabindex="0" aria-label="Preview Castle Stone Walls">
+          <img src="assets/hitoyoshi castle.webp" alt="Hitoyoshi Castle stone walls" loading="lazy" decoding="async">
+          <div class="gallery__item-overlay">
+            <span>Castle Stone Walls</span>
+          </div>
+        </div>
+        <div class="gallery__item" data-index="2" role="button" tabindex="0" aria-label="Preview Aoi Aso Shrine Thatched Roof">
+          <img src="assets/hitoyoshi shrine.jfif" alt="Aoi Aso Shrine thatched roof" loading="lazy" decoding="async">
+          <div class="gallery__item-overlay">
+            <span>Aoi Aso Shrine</span>
+          </div>
+        </div>
+        <div class="gallery__item" data-index="3" role="button" tabindex="0" aria-label="Preview Kuma River Canyon">
+          <img src="assets/kuma river.jfif" alt="Kuma River flowing through the gorge" loading="lazy" decoding="async">
+          <div class="gallery__item-overlay">
+            <span>Kuma River Gorge</span>
+          </div>
+        </div>
+        <div class="gallery__item" data-index="4" role="button" tabindex="0" aria-label="Preview Traditional River Boat Cruise">
+          <img src="assets/boat.jpg" alt="Traditional wooden boat on Kuma River" loading="lazy" decoding="async">
+          <div class="gallery__item-overlay">
+            <span>Traditional River Boat</span>
+          </div>
+        </div>
+        <div class="gallery__item" data-index="5" role="button" tabindex="0" aria-label="Preview Summer Fireworks Festival">
+          <img src="assets/firework.jpg" alt="Fireworks festival over Hitoyoshi" loading="lazy" decoding="async">
+          <div class="gallery__item-overlay">
+            <span>Summer Fireworks Festival</span>
+          </div>
+        </div>
+        <div class="gallery__item" data-index="6" role="button" tabindex="0" aria-label="Preview SL Hitoyoshi Steam Locomotive">
+          <img src="assets/steam locomotive hitoyoshi SL.webp" alt="SL Hitoyoshi steam locomotive" loading="lazy" decoding="async">
+          <div class="gallery__item-overlay">
+            <span>SL Hitoyoshi Train</span>
+          </div>
+        </div>
+        <div class="gallery__item" data-index="7" role="button" tabindex="0" aria-label="Preview Historic Red Bridge">
+          <img src="assets/red bridge.webp" alt="Red bridge over the river in Hitoyoshi" loading="lazy" decoding="async">
+          <div class="gallery__item-overlay">
+            <span>Iconic Red Bridge</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       MAP / ACCESS SECTION
+       ============================================ -->
+  <section class="section map-section" id="map">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section__label">Getting There</span>
+        <h2 class="section__title">Access &amp; Location</h2>
+        <p class="section__subtitle">Hitoyoshi is well-connected by rail and highway. The compact town center is easily walkable or navigated by rental bicycle.</p>
+      </div>
+
+      <div class="map__grid">
+        <div class="fade-in-left">
+          <img src="assets/hitoyoshi map.png" alt="Map showing location of Hitoyoshi in Kumamoto Prefecture" class="map__image" loading="lazy" decoding="async">
+        </div>
+
+        <div class="map__info-list fade-in-right">
+          <div class="map__info-item">
+            <div class="map__info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="16" rx="2"></rect><path d="M4 11h16M12 3v8M8 15h.01M16 15h.01M8 19l-2 3M16 19l2 3"></path></svg>
+            </div>
+            <div class="map__info-text">
+              <h4>By Train</h4>
+              <p>JR Hisatsu Line from Kumamoto Station (~1.5 hours) or take the SL Hitoyoshi steam locomotive for a scenic journey on weekends.</p>
+            </div>
+          </div>
+          <div class="map__info-item">
+            <div class="map__info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2l3-3h8l3 3a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2M5 17a2 2 0 1 0 4 0M15 17a2 2 0 1 0 4 0"></path></svg>
+            </div>
+            <div class="map__info-text">
+              <h4>By Car</h4>
+              <p>Approximately 1.5 hours from Kumamoto City via the Kyushu Expressway. Free parking available at major attractions.</p>
+            </div>
+          </div>
+          <div class="map__info-item">
+            <div class="map__info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+            </div>
+            <div class="map__info-text">
+              <h4>Nearest Airport</h4>
+              <p>Kumamoto Aso Airport (KMJ) &mdash; about 1.5 hours by car or airport bus + train connection.</p>
+            </div>
+          </div>
+          <div class="map__info-item">
+            <div class="map__info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            </div>
+            <div class="map__info-text">
+              <h4>Official Tourism Links</h4>
+              <p>
+                <a href="https://www.japan.travel/en/destinations/kyushu/kumamoto/hitoyoshi/" target="_blank" rel="noopener noreferrer">Japan Travel Guide &nearr;</a>
+                &nbsp;&bull;&nbsp;
+                <a href="https://maps.google.com/?q=Hitoyoshi+Kumamoto+Japan" target="_blank" rel="noopener noreferrer">Google Maps &nearr;</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       RECOMMENDATIONS — Other Destinations
+       ============================================ -->
+  <section class="section recommendations" id="recommendations">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section__label">Explore More</span>
+        <h2 class="section__title">Other Recommended Destinations</h2>
+        <p class="section__subtitle">If you love Hitoyoshi, you'll enjoy these other stunning destinations in Kyushu and beyond.</p>
+      </div>
+
+      <div class="recommendations__grid">
+        <a href="https://www.japan.travel/en/destinations/kyushu/kumamoto/" target="_blank" rel="noopener noreferrer" class="rec-card fade-in">
+          <div class="rec-card__image-wrapper">
+            <img src="assets/castle.jpg" alt="Kumamoto Castle" class="rec-card__image" loading="lazy" decoding="async">
+          </div>
+          <div class="rec-card__body">
+            <h3 class="rec-card__title">Kumamoto Castle</h3>
+            <p class="rec-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Kumamoto City, Kumamoto</p>
+          </div>
+        </a>
+
+        <a href="https://www.japan.travel/en/destinations/kyushu/kumamoto/aso-and-around/" target="_blank" rel="noopener noreferrer" class="rec-card fade-in">
+          <div class="rec-card__image-wrapper">
+            <img src="assets/hitoyoshi castle ruins.jpg" alt="Mount Aso volcanic landscape" class="rec-card__image" loading="lazy" decoding="async">
+          </div>
+          <div class="rec-card__body">
+            <h3 class="rec-card__title">Mount Aso</h3>
+            <p class="rec-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Aso, Kumamoto Prefecture</p>
+          </div>
+        </a>
+
+        <a href="https://www.japan.travel/en/destinations/kyushu/oita/beppu-and-around/" target="_blank" rel="noopener noreferrer" class="rec-card fade-in">
+          <div class="rec-card__image-wrapper">
+            <img src="assets/kuma river 2.jpg" alt="Beppu hot springs" class="rec-card__image" loading="lazy" decoding="async">
+          </div>
+          <div class="rec-card__body">
+            <h3 class="rec-card__title">Beppu Onsen</h3>
+            <p class="rec-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Beppu, Oita Prefecture</p>
+          </div>
+        </a>
+
+        <a href="https://www.japan.travel/en/destinations/kyushu/kagoshima/yakushima/" target="_blank" rel="noopener noreferrer" class="rec-card fade-in">
+          <div class="rec-card__image-wrapper">
+            <img src="assets/waterfall.jpg" alt="Yakushima ancient cedar forest" class="rec-card__image" loading="lazy" decoding="async">
+          </div>
+          <div class="rec-card__body">
+            <h3 class="rec-card__title">Yakushima Island</h3>
+            <p class="rec-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Kagoshima Prefecture</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CONTACT / FORM SECTION
+       ============================================ -->
+  <section class="section section--light" id="contact">
+    <div class="container">
+      <div class="text-center fade-in">
+        <span class="section__label">Get in Touch</span>
+        <h2 class="section__title">Plan Your Visit</h2>
+        <p class="section__subtitle">Have questions or want to book a guided tour? Fill out the form below and our local tourism team will get back to you within 24 hours.</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info fade-in-left">
+          <p class="contact__info-text">
+            Whether you're planning a weekend getaway or a week-long Kyushu exploration, our tourism specialists can help you create the perfect Hitoyoshi itinerary. Reach out to us for customized tour packages, group bookings, or travel advice.
+          </p>
+
+          <div class="contact__detail-list">
+            <div class="contact__detail-item">
+              <div class="contact__detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact__detail-text">
+                <h4>Address</h4>
+                <p>Hitoyoshi Tourism Association<br>Kamiaoi-machi, Hitoyoshi City<br>Kumamoto 868-0005, Japan</p>
+              </div>
+            </div>
+            <div class="contact__detail-item">
+              <div class="contact__detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact__detail-text">
+                <h4>Email</h4>
+                <a href="mailto:info@hitoyoshi-travel.jp">info@hitoyoshi-travel.jp</a>
+              </div>
+            </div>
+            <div class="contact__detail-item">
+              <div class="contact__detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact__detail-text">
+                <h4>Phone</h4>
+                <p>+81 966-22-2111</p>
+              </div>
+            </div>
+            <div class="contact__detail-item">
+              <div class="contact__detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="contact__detail-text">
+                <h4>Office Hours</h4>
+                <p>Monday – Friday: 09:00 – 17:00 (JST)<br>Saturday: 10:00 – 15:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact / Booking Form -->
+        <div class="fade-in-right">
+          <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
+            <h3 class="contact-form__title">Inquiry &amp; Booking Form</h3>
+            <p class="contact-form__subtitle">Fill in your details and we'll respond within 24 hours.</p>
+
+            <!-- Accessible In-Page Status Notification -->
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Your first name" required aria-required="true" aria-describedby="firstNameError">
+                <div class="field-error-msg" id="firstNameError">Please enter your first name.</div>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Your last name" required aria-required="true" aria-describedby="lastNameError">
+                <div class="field-error-msg" id="lastNameError">Please enter your last name.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required aria-required="true" aria-describedby="emailError">
+              <div class="field-error-msg" id="emailError">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="visitDate">Planned Visit Date</label>
+                <input type="date" id="visitDate" name="visitDate" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" class="form-select">
+                  <option value="" disabled selected>Select</option>
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3-5">3 – 5 people</option>
+                  <option value="6-10">6 – 10 people</option>
+                  <option value="10+">10+ people</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="interest">Interest</label>
+              <select id="interest" name="interest" class="form-select">
+                <option value="" disabled selected>What are you interested in?</option>
+                <option value="river-cruise">River Boat Cruise</option>
+                <option value="rafting">Whitewater Rafting</option>
+                <option value="castle-tour">Castle & Shrine Tour</option>
+                <option value="steam-train">SL Hitoyoshi Train</option>
+                <option value="onsen">Hot Spring (Onsen) Experience</option>
+                <option value="shochu">Shōchū Distillery Tour</option>
+                <option value="full-package">Full Package Tour</option>
+                <option value="other">Other / General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" class="form-control" placeholder="Tell us about your travel plans, preferences, or any questions you have..." required aria-required="true" aria-describedby="messageError"></textarea>
+              <div class="field-error-msg" id="messageError">Please enter your message or question.</div>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Subscribe to our newsletter for seasonal travel tips, event updates, and exclusive offers from Hitoyoshi.</label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg btn--block">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div>
+          <a href="#hero" class="logo" style="color: #fff;">
+            <img src="assets/flag-hitoyoshi.webp" alt="Hitoyoshi city emblem" class="logo__icon">
+            <div>
+              <span class="logo__text">Discover Hitoyoshi</span>
+              <span class="logo__sub" style="color: var(--color-mid-gray);">Kumamoto, Japan</span>
+            </div>
+          </a>
+          <p class="footer__brand-desc">
+            Your gateway to Kyushu's hidden gem &mdash; a serene castle town where 700 years of samurai history meets breathtaking natural beauty. Start planning your Hitoyoshi adventure today.
+          </p>
+          <div class="footer__social">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer__heading">Explore</h4>
+          <ul class="footer__links">
+            <li><a href="#about" class="footer__link">About Hitoyoshi</a></li>
+            <li><a href="#attractions" class="footer__link">Attractions</a></li>
+            <li><a href="#pricing" class="footer__link">Pricing &amp; Schedule</a></li>
+            <li><a href="#gallery" class="footer__link">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Useful Links -->
+        <div>
+          <h4 class="footer__heading">Useful Links</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.japan.travel/en/destinations/kyushu/kumamoto/hitoyoshi/" target="_blank" rel="noopener noreferrer" class="footer__link">Japan Travel Guide &nearr;</a></li>
+            <li><a href="https://maps.google.com/?q=Hitoyoshi+Kumamoto+Japan" target="_blank" rel="noopener noreferrer" class="footer__link">Google Maps &nearr;</a></li>
+            <li><a href="https://www.jrkyushu.co.jp/english/" target="_blank" rel="noopener noreferrer" class="footer__link">JR Kyushu &nearr;</a></li>
+            <li><a href="#contact" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Summary -->
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link">Kamiaoi-machi, Hitoyoshi</span></li>
+            <li><span class="footer__link">Kumamoto 868-0005</span></li>
+            <li><a href="mailto:info@hitoyoshi-travel.jp" class="footer__link">info@hitoyoshi-travel.jp</a></li>
+            <li><span class="footer__link">+81 966-22-2111</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- [PDF REQUIREMENT 4.c & 5.k] Heading Hierarchy (h5, h6) & Teks Paragraf Identitas Pembuat -->
+      <div class="footer__bottom">
+        <div class="footer__meta">
+          <h5 class="footer__subheading">Official Tourism Portal &bull; Kumamoto Prefecture</h5>
+          <p>&copy; 2026 Discover Hitoyoshi. All rights reserved.</p>
+          <h6 class="footer__credit">Designed &amp; Developed by Mentee for <strong>Mini Project Frontend &mdash; Study Club Basic 2026</strong></h6>
+        </div>
+        <p class="footer__social-note">Connect with us on official channels &bull; Verified Municipal Partner</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================
+       BACK TO TOP BUTTON
+       ============================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+
+  <!-- ============================================
+       GOOGLE DRIVE-STYLE GALLERY PREVIEW MODAL
+       ============================================ -->
+  <div class="gdrive-modal" id="gdriveModal" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <div class="gdrive-modal__backdrop" id="gdriveBackdrop"></div>
+
+    <div class="gdrive-modal__container">
+      <!-- Top Header Bar (Drive-style) -->
+      <div class="gdrive-modal__header">
+        <div class="gdrive-modal__title-area">
+          <div class="gdrive-modal__file-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          </div>
+          <span class="gdrive-modal__filename" id="gdriveFileName">Hitoyoshi Basin at Dawn</span>
+          <span class="gdrive-modal__counter" id="gdriveCounter">1 / 8</span>
+        </div>
+
+        <div class="gdrive-modal__actions">
+          <button class="gdrive-modal__action-btn" id="gdriveZoomBtn" aria-label="Toggle zoom">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </button>
+          <a class="gdrive-modal__action-btn" id="gdriveDownloadBtn" href="assets/hitoyoshi sky.jpg" target="_blank" download aria-label="Download image">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+          <button class="gdrive-modal__action-btn gdrive-modal__action-btn--close" id="gdriveCloseBtn" aria-label="Close preview (Escape)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Stage with Image and Side Nav Buttons -->
+      <div class="gdrive-modal__stage">
+        <button class="gdrive-modal__nav gdrive-modal__nav--prev" id="gdrivePrevBtn" aria-label="Previous photo (Left arrow)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <div class="gdrive-modal__img-wrap" id="gdriveImgWrap">
+          <img src="assets/hitoyoshi sky.jpg" alt="" id="gdriveImg" class="gdrive-modal__img">
+        </div>
+
+        <button class="gdrive-modal__nav gdrive-modal__nav--next" id="gdriveNextBtn" aria-label="Next photo (Right arrow)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- Bottom Caption Bar -->
+      <div class="gdrive-modal__caption" id="gdriveCaption">
+        Panoramic view of Hitoyoshi mountain basin illuminated by morning mist.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================
+       JAVASCRIPT
+       ============================================ -->
+  <script>
+    // ========================================
+    // 1. HEADER SCROLL & BACK TO TOP
+    // ========================================
+    const header = document.getElementById('header');
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      if (window.scrollY > 600) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+
+    // ========================================
+    // 2. MOBILE NAVIGATION
+    // ========================================
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+
+    hamburger.addEventListener('click', function () {
+      this.classList.toggle('active');
+      navMobile.classList.toggle('active');
+      this.setAttribute('aria-expanded', String(navMobile.classList.contains('active')));
+      document.body.style.overflow = navMobile.classList.contains('active') ? 'hidden' : '';
+    });
+
+    document.querySelectorAll('.nav-mobile__link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        hamburger.classList.remove('active');
+        navMobile.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+
+    // ========================================
+    // 3. ACTIVE NAV LINK HIGHLIGHT
+    // ========================================
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-desktop__link');
+
+    function highlightNav() {
+      let current = '';
+      sections.forEach(function (section) {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(function (link) {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', highlightNav);
+
+
+    // ========================================
+    // 4. SCROLL ANIMATIONS (Intersection Observer)
+    // ========================================
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -60px 0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(function (el) {
+      observer.observe(el);
+    });
+
+
+    // ========================================================================
+    // 5. ATTRACTIONS FULLSCREEN SHOWCASE SLIDER (Gambar 2 Layout + Tactile Animation)
+    // [PDF REQUIREMENT 4.b] Slide transition with directional CSS animations & reflow
+    // ========================================================================
+    const fsSlides = document.querySelectorAll('.fs-slide');
+    const totalFsSlides = fsSlides.length;
+    let currentFsSlide = 0;
+
+    function goToFsSlide(index, direction) {
+      const prevSlide = currentFsSlide;
+      if (index < 0) {
+        currentFsSlide = totalFsSlides - 1;
+      } else if (index >= totalFsSlides) {
+        currentFsSlide = 0;
+      } else {
+        currentFsSlide = index;
+      }
+
+      if (!direction) {
+        direction = currentFsSlide >= prevSlide ? 'next' : 'prev';
+      }
+
+      fsSlides.forEach(function (slide, idx) {
+        slide.classList.remove('active', 'slide-in-next', 'slide-in-prev');
+        if (idx === currentFsSlide) {
+          // Force layout reflow so animation re-triggers cleanly every time
+          void slide.offsetWidth;
+          slide.classList.add('active');
+          slide.classList.add(direction === 'prev' ? 'slide-in-prev' : 'slide-in-next');
+        }
+      });
+
+      // Update dots on all slides
+      document.querySelectorAll('.fs-dots').forEach(function (group) {
+        const dots = group.querySelectorAll('.fs-dot');
+        dots.forEach(function (dot, idx) {
+          if (idx === currentFsSlide) {
+            dot.classList.add('active');
+            dot.setAttribute('aria-selected', 'true');
+          } else {
+            dot.classList.remove('active');
+            dot.setAttribute('aria-selected', 'false');
+          }
+        });
+      });
+
+      // Update counter on all slides
+      document.querySelectorAll('.fs-counter__active').forEach(function (counter) {
+        counter.textContent = String(currentFsSlide + 1).padStart(2, '0');
+      });
+    }
+
+    // Attach Previous and Next buttons on every slide with direction parameter
+    document.querySelectorAll('.fs-nav-arrow--prev').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        goToFsSlide(currentFsSlide - 1, 'prev');
+      });
+    });
+
+    document.querySelectorAll('.fs-nav-arrow--next').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        goToFsSlide(currentFsSlide + 1, 'next');
+      });
+    });
+
+    // Attach dot buttons on all slides with auto direction
+    document.querySelectorAll('.fs-dot').forEach(function (dot) {
+      dot.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetIndex = parseInt(this.getAttribute('data-index'), 10);
+        const dir = targetIndex >= currentFsSlide ? 'next' : 'prev';
+        goToFsSlide(targetIndex, dir);
+      });
+    });
+
+    // Touch swipe support for attractions slider
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const fsShowcase = document.getElementById('attractions');
+
+    if (fsShowcase) {
+      fsShowcase.addEventListener('touchstart', function (e) {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      fsShowcase.addEventListener('touchend', function (e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      }, { passive: true });
+
+      function handleSwipe() {
+        const swipeDiff = touchEndX - touchStartX;
+        if (Math.abs(swipeDiff) > 50) {
+          if (swipeDiff < 0) {
+            goToFsSlide(currentFsSlide + 1); // Swipe left -> next
+          } else {
+            goToFsSlide(currentFsSlide - 1); // Swipe right -> prev
+          }
+        }
+      }
+    }
+
+
+    // ========================================
+    // 6. GALLERY & DRIVE-STYLE FULLSCREEN PREVIEW MODAL
+    // ========================================
+    const galleryData = [
+      {
+        src: 'assets/hitoyoshi sky.jpg',
+        title: 'Hitoyoshi Basin at Dawn',
+        caption: 'Dense sea of morning fog (unkai) carpeting the fertile Hitoyoshi Basin surrounded by Kyushu mountain ranges.'
+      },
+      {
+        src: 'assets/hitoyoshi castle.webp',
+        title: 'Hitoyoshi Castle Stone Walls',
+        caption: 'The ancient curved stone ramparts (musha-gaeshi) of Sengetsu-jō, standing proud along the Kuma River.'
+      },
+      {
+        src: 'assets/hitoyoshi shrine.jfif',
+        title: 'Aoi Aso Shrine Thatched Sanctuary',
+        caption: 'The 1,200-year-old National Treasure Shinto shrine featuring iconic Momoyama wood carvings and kayabuki thatched roofing.'
+      },
+      {
+        src: 'assets/kuma river.jfif',
+        title: 'Kuma River Emerald Gorge',
+        caption: 'The rushing turquoise waters of the Kuma River, ranked among the three fastest-flowing mountain rivers in Japan.'
+      },
+      {
+        src: 'assets/boat.jpg',
+        title: 'Traditional Wooden Boat Cruise',
+        caption: 'Master boatmen navigating the clear river rapids on handcrafted wooden longboats (Kumagawa Kudari).'
+      },
+      {
+        src: 'assets/firework.jpg',
+        title: 'Hitoyoshi Summer Fireworks Festival',
+        caption: 'Brilliant pyrotechnics illuminating the summer night sky reflecting across the tranquil river waters.'
+      },
+      {
+        src: 'assets/steam locomotive hitoyoshi SL.webp',
+        title: 'SL Hitoyoshi Steam Locomotive',
+        caption: "JR Kyushu vintage locomotive No. 58654, Japan's oldest operating passenger steam train."
+      },
+      {
+        src: 'assets/red bridge.webp',
+        title: 'Historic Red Bridge of Aoi Aso',
+        caption: 'The picturesque vermilion bridge spanning the sacred lotus pond at the entrance of Aoi Aso Shrine.'
+      },
+      {
+        src: 'assets/food hitoyoshi.jpg',
+        title: 'Hitoyoshi Ayu Sweetfish & Kuma Shochu',
+        caption: 'Traditional local cuisine: fresh charcoal-grilled Kuma River ayu sweetfish paired with 500-year-old rice shochu.'
+      },
+      {
+        src: 'assets/kuma river 2.jpg',
+        title: 'Authentic Onsen Bathhouse',
+        caption: 'Traditional cedarwood bathhouse offering pure, natural hot spring waters dating back to the samurai era.'
+      },
+      {
+        src: 'assets/waterfall.jpg',
+        title: 'Kaname Waterfall Gorge',
+        caption: 'Spectacular 36-meter waterfall cascading down columnar basalt cliffs in a secluded forested valley.'
+      },
+      {
+        src: 'assets/castle hitoyoshi.jpg',
+        title: 'Sengetsu Castle Overlook',
+        caption: 'Panoramic view from the castle ruins commanding the entire historic district and surrounding mountains.'
+      }
+    ];
+
+    const gdriveModal = document.getElementById('gdriveModal');
+    const gdriveBackdrop = document.getElementById('gdriveBackdrop');
+    const gdriveCloseBtn = document.getElementById('gdriveCloseBtn');
+    const gdrivePrevBtn = document.getElementById('gdrivePrevBtn');
+    const gdriveNextBtn = document.getElementById('gdriveNextBtn');
+    const gdriveZoomBtn = document.getElementById('gdriveZoomBtn');
+    const gdriveDownloadBtn = document.getElementById('gdriveDownloadBtn');
+    const gdriveImg = document.getElementById('gdriveImg');
+    const gdriveFileName = document.getElementById('gdriveFileName');
+    const gdriveCounter = document.getElementById('gdriveCounter');
+    const gdriveCaption = document.getElementById('gdriveCaption');
+
+    let currentGalleryIdx = 0;
+    let isZoomed = false;
+
+    function renderGalleryModal() {
+      const item = galleryData[currentGalleryIdx];
+      if (!item) return;
+
+      gdriveImg.src = item.src;
+      gdriveImg.alt = item.title;
+      gdriveFileName.textContent = item.title;
+      gdriveCounter.textContent = (currentGalleryIdx + 1) + ' of ' + galleryData.length;
+      gdriveCaption.textContent = item.caption;
+      gdriveDownloadBtn.href = item.src;
+
+      // Reset zoom
+      isZoomed = false;
+      gdriveImg.classList.remove('zoomed');
+      if (gdriveZoomBtn) {
+        gdriveZoomBtn.setAttribute('aria-pressed', 'false');
+      }
+    }
+
+    function openGalleryModal(index) {
+      currentGalleryIdx = index;
+      renderGalleryModal();
+      gdriveModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      gdriveCloseBtn.focus();
+    }
+
+    function closeGalleryModal() {
+      gdriveModal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Attach click and keyboard handlers to all gallery items
+    document.querySelectorAll('.gallery__item').forEach(function (item) {
+      item.addEventListener('click', function () {
+        const idx = parseInt(this.getAttribute('data-index'), 10);
+        openGalleryModal(idx);
+      });
+      item.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const idx = parseInt(this.getAttribute('data-index'), 10);
+          openGalleryModal(idx);
+        }
+      });
+    });
+
+    // Close button & backdrop handlers
+    if (gdriveCloseBtn) {
+      gdriveCloseBtn.addEventListener('click', closeGalleryModal);
+    }
+    if (gdriveBackdrop) {
+      gdriveBackdrop.addEventListener('click', closeGalleryModal);
+    }
+
+    // Nav arrows inside modal
+    if (gdrivePrevBtn) {
+      gdrivePrevBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        currentGalleryIdx = (currentGalleryIdx - 1 + galleryData.length) % galleryData.length;
+        renderGalleryModal();
+      });
+    }
+
+    if (gdriveNextBtn) {
+      gdriveNextBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        currentGalleryIdx = (currentGalleryIdx + 1) % galleryData.length;
+        renderGalleryModal();
+      });
+    }
+
+    // Zoom toggle inside modal
+    if (gdriveZoomBtn) {
+      gdriveZoomBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        isZoomed = !isZoomed;
+        gdriveImg.classList.toggle('zoomed', isZoomed);
+        this.setAttribute('aria-pressed', String(isZoomed));
+      });
+    }
+
+    // Global Keydown for Modal, Slider, & Mobile Nav
+    document.addEventListener('keydown', function (e) {
+      if (gdriveModal && gdriveModal.classList.contains('open')) {
+        if (e.key === 'Escape') {
+          closeGalleryModal();
+        } else if (e.key === 'ArrowLeft') {
+          currentGalleryIdx = (currentGalleryIdx - 1 + galleryData.length) % galleryData.length;
+          renderGalleryModal();
+        } else if (e.key === 'ArrowRight') {
+          currentGalleryIdx = (currentGalleryIdx + 1) % galleryData.length;
+          renderGalleryModal();
+        }
+      } else if (e.key === 'Escape' && navMobile.classList.contains('active')) {
+        hamburger.classList.remove('active');
+        navMobile.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        hamburger.focus();
+      } else if (!gdriveModal.classList.contains('open')) {
+        // When modal is not open, left/right arrows can navigate attractions slider
+        const rect = fsShowcase.getBoundingClientRect();
+        const isInView = rect.top < window.innerHeight && rect.bottom > 0;
+        if (isInView) {
+          if (e.key === 'ArrowLeft') {
+            goToFsSlide(currentFsSlide - 1);
+          } else if (e.key === 'ArrowRight') {
+            goToFsSlide(currentFsSlide + 1);
+          }
+        }
+      }
+    });
+
+
+    // ========================================
+    // 7. ACCESSIBLE FORM HANDLER & INLINE VALIDATION
+    // (UI/UX Pro Max: In-page status banner, no alert)
+    // ========================================
+    const contactForm = document.getElementById('contactForm');
+    const formFeedback = document.getElementById('formFeedback');
+    const fieldsToValidate = [
+      { id: 'firstName', errorId: 'firstNameError', validator: val => val.trim().length > 0 },
+      { id: 'lastName', errorId: 'lastNameError', validator: val => val.trim().length > 0 },
+      { id: 'email', errorId: 'emailError', validator: val => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim()) },
+      { id: 'message', errorId: 'messageError', validator: val => val.trim().length > 0 }
+    ];
+
+    function validateField(field) {
+      const input = document.getElementById(field.id);
+      const errorMsg = document.getElementById(field.errorId);
+      if (!input || !errorMsg) return true;
+
+      const isValid = field.validator(input.value);
+
+      if (!isValid) {
+        input.classList.add('input-invalid');
+        errorMsg.classList.add('show');
+        return false;
+      } else {
+        input.classList.remove('input-invalid');
+        errorMsg.classList.remove('show');
+        return true;
+      }
+    }
+
+    fieldsToValidate.forEach(function (field) {
+      const input = document.getElementById(field.id);
+      if (!input) return;
+
+      input.addEventListener('blur', function () {
+        validateField(field);
+      });
+      input.addEventListener('input', function () {
+        if (input.classList.contains('input-invalid')) {
+          validateField(field);
+        }
+      });
+    });
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        let isFormValid = true;
+        let firstInvalidInput = null;
+
+        fieldsToValidate.forEach(function (field) {
+          const valid = validateField(field);
+          if (!valid) {
+            isFormValid = false;
+            if (!firstInvalidInput) {
+              firstInvalidInput = document.getElementById(field.id);
+            }
+          }
+        });
+
+        if (!isFormValid) {
+          formFeedback.className = 'form-feedback form-feedback--error show';
+          formFeedback.innerHTML = '<strong>Please fill in all highlighted fields correctly</strong> before submitting.';
+          if (firstInvalidInput) {
+            firstInvalidInput.focus();
+          }
+          return;
+        }
+
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        setTimeout(function () {
+          const firstName = document.getElementById('firstName').value.trim();
+          formFeedback.className = 'form-feedback form-feedback--success show';
+          formFeedback.innerHTML = '<div><strong>Thank you, ' + firstName + '!</strong> Your inquiry has been submitted successfully. Our local Hitoyoshi team will reply within 24 hours.</div>';
+
+          contactForm.reset();
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+
+          document.querySelectorAll('.input-invalid').forEach(el => el.classList.remove('input-invalid'));
+          document.querySelectorAll('.field-error-msg').forEach(el => el.classList.remove('show'));
+
+          formFeedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 1000);
+      });
+    }
+
+
+    // ========================================
+    // 8. SMOOTH SCROLL FOR ANCHOR LINKS
+    // ========================================
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
